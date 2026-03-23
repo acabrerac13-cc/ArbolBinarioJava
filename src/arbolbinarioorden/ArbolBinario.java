@@ -11,7 +11,7 @@ public class ArbolBinario {
         raiz = null;
     }
 
-    // Insertar (tipo ABB)
+
     public Nodo insertar(Nodo raiz, int dato) {
         if (raiz == null) {
             return new Nodo(dato);
@@ -26,7 +26,6 @@ public class ArbolBinario {
         return raiz;
     }
 
-    // InOrden
     public void inOrden(Nodo raiz) {
         if (raiz != null) {
             inOrden(raiz.izquierdo);
@@ -35,7 +34,6 @@ public class ArbolBinario {
         }
     }
 
-    // PreOrden
     public void preOrden(Nodo raiz) {
         if (raiz != null) {
             System.out.print(raiz.dato + " ");
@@ -44,7 +42,6 @@ public class ArbolBinario {
         }
     }
 
-    // PostOrden
     public void postOrden(Nodo raiz) {
         if (raiz != null) {
             postOrden(raiz.izquierdo);
